@@ -17,4 +17,4 @@ opkg install python
 
 
 # 使用
-
+<pre><code>python hijack.py</code></pre>
