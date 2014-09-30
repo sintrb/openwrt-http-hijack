@@ -16,7 +16,7 @@ def retext(p, s, d):
 def rehead(data):
 	p = retext('GET (\S+) HTTP/', data, None)
 	h = retext('Host:\s*(\S+)\s*', data, None)
-	c = retext('Cookie:\s*(\S+)\s*', data, None)
+	c = retext('Cookie:(.*)\n', data, None)
 	return (h,p,c)
 
 def record(url, cookie):
